@@ -254,3 +254,28 @@ if __name__ == "__main__":
     print("\n" + "=" * 70)
     print("ANALYSIS COMPLETE")
     print("=" * 70)
+
+
+
+# Question 1: Check if it affects the visual quality of the image
+#
+# Answer:
+# NO, the manipulation does NOT significantly affect visual quality. The maximum
+# pixel change is only 3/255 (1.18%), which is below human perception threshold.
+# The images appear virtually identical to the human eye, which is why LSB
+# steganography is effective for hiding data without noticeable degradation.
+
+# Question 2: Do you see any difference? Can this be used to detect if a satellite
+#             image has been manipulated?
+#
+# Answer:
+# YES, differences are visible in histograms, and YES, manipulation can be detected.
+# The manipulated histogram shows a flattened distribution compared to the original's
+# natural peaks. Detection methods include:
+# - Chi-square test (statistical distribution changes)
+# - LSB uniformity analysis (unnatural bit patterns)
+# - Sample Pairs Analysis (SPA)
+# - RS Steganalysis
+
+# While invisible to human eyes, LSB manipulation leaves statistical fingerprints
+# detectable through these methods.
